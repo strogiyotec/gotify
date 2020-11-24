@@ -2,11 +2,10 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/spf13/cobra"
-	"os"
-
 	homedir "github.com/mitchellh/go-homedir"
+	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"os"
 )
 
 var cfgFile string
@@ -17,9 +16,6 @@ var rootCmd = &cobra.Command{
 	Short: "A cli app to show a new version of binaries you have",
 	Long: `If you are like me and have a lot of binary apps installed from github then you
 		can use this cli to see if some binaries have new versions`,
-	// Uncomment the following line if your bare application
-	// has an action associated with it:
-	//	Run: func(cmd *cobra.Command, args []string) { },
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
